@@ -952,26 +952,25 @@
         </div>
     </div>
 
-    <!-- Configuración e Inicialización de Firebase -->
+    <!-- Firebase SDK (Módulos ES) -->
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
         import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js";
 
         const firebaseConfig = {
-            apiKey: "AIzaSyAhMkrzYZ-5w39Pv9GS4Wj3k8rAHqAJj14",
-            authDomain: "elite-importadora-tienda-web.firebaseapp.com",
-            projectId: "elite-importadora-tienda-web",
-            storageBucket: "elite-importadora-tienda-web.firebasestorage.app",
-            messagingSenderId: "703639197802",
-            appId: "1:703639197802:web:7a6c9a51abbc9fe9191213",
-            measurementId: "G-8ZSHSKM7PK"
+            apiKey: "AIzaSyCOItHMKMfFjO6wCbeBwfU1yz4ERlbBEhQ",
+            authDomain: "tienda-web-ti-mondino.firebaseapp.com",
+            projectId: "tienda-web-ti-mondino",
+            storageBucket: "tienda-web-ti-mondino.firebasestorage.app",
+            messagingSenderId: "288362521612",
+            appId: "1:288362521612:web:3667aeeb6043a295593a29",
+            measurementId: "G-7WMYQNBY05"
         };
 
         const app = initializeApp(firebaseConfig);
         const analytics = getAnalytics(app);
     </script>
 
-    <!-- Scripts de la Aplicación -->
     <script>
         // Carga de Categorías persistentes
         let categorias = JSON.parse(localStorage.getItem('tienda_categorias')) || ['Partes de Arriba', 'Partes de Abajo', 'Accesorios'];
